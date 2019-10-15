@@ -1,7 +1,7 @@
 ﻿using CommandLine;
 using System;
 
-namespace pass
+namespace passt
 {
     interface IOptions
     {

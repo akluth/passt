@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using Tommy;
 
-namespace pass
+namespace passt
 {
     static class PasswordStore
     {
