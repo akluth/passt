@@ -34,13 +34,13 @@ That's it. It will not get any more complex or blown-up with features.
 ## Security
 The `.pass` file is en- and decrypted via the `System.IO.File.{Encrypt|Decrypt}` methods from 
 mscorlib.dll, netstandard.dll, System.IO.FileSystem.dll (see [Microsoft's documentation](https://docs.microsoft.com/en-us/dotnet/api/system.io.file.encrypt?view=netframework-4.8)
-for more info.
+for more info).
 
 To make things short: Only the user account, which encrypted the file can decrypt it. This is done via
 the cryptographic service provider (CSP).
 
 ### Limitations
-The CSP is **not** available in Home versions of Windows. The harddrive **must** be formatted as NTFS.
+The CSP is **not** available in Home versions of Windows. The filesystem **must** be formatted as NTFS.
 
 ## License
 Licensed under the terms and conditions of the MIT license. See LICENSE for more information.
